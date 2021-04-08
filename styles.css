@@ -349,15 +349,31 @@ div.footer h6 {
 @media screen and (max-width: 768px) {
   div.nav-bar {
     display: flex;
-    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    width: 100vw;
   }
 
   ul.nav-links {
-    margin-top: 1rem;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.logo {
+    font-size: 1.25rem;
+  }
+
+  ul.nav-links li {
+    margin: 0rem;
+    padding: 0.1rem;
+  }
+
+  ul li a {
+    display: block;
   }
 
   div.background {
-    /* padding-left: 0.5rem; */
     height: fit-content;
   }
 
@@ -367,7 +383,7 @@ div.footer h6 {
   }
 
   div.hero-background-pos {
-    left: 65%;
+    display: none;
   }
 
   div.background {
@@ -377,8 +393,21 @@ div.footer h6 {
   div.background p {
     color: wheat;
   }
-}
 
+  div.hero-content-heading {
+    margin: auto;
+  }
+  /* 
+  div.box1,
+  div.box3 {
+    width: 25rem;
+  }
+
+  div.circle {
+    margin-top: 3rem;
+  } */
+}
+/* 
 @media screen and (min-width: 768px) {
   div.hero-background-pos {
     left: 70%;
@@ -393,15 +422,15 @@ div.footer h6 {
     color: wheat;
   }
 }
-
+/* 
 @media screen and (min-width: 992px) {
   div.hero-background-pos {
-    left: 71%;
+    left: 69%;
   }
-}
-
+} */
+/* 
 @media screen and (min-width: 1024px) {
   div.hero-background-pos {
-    left: 66%;
+    left: 73%;
   }
-}
+} */
